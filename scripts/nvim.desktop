@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=NeoVim
+Comment=Open a text file in NeoVim using alacritty
+Exec=alacritty -e nvim
