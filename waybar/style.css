@@ -40,44 +40,29 @@ window#waybar.chromium {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
 
-#workspaces {
-    border-radius: 5px;
+
+
+
+#workspaces button { 
+    color: #211e21;
     margin-top: 5px;
-    background: #211e21;
-  
-}
-
-
-#workspaces button {
-    background: #211e21;
-    color: #FFFFFF;
+    padding: 3px;
     
 }
-
-
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-    
-}
-
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-    
+    background: rgba(0, 0, 0, 0.0);
+    border: rgba(0, 0, 0, 0.0);
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    color: #eb4d4b;
     
 }
 
 
 
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
-}
+
 
 #clock,
 #battery,
@@ -99,20 +84,17 @@ window#waybar.chromium {
     color: #ffffff;
 }
 
-#window,
-#workspaces {
-    margin: 0 4px;
-}
+
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+/* .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
-}
+} */
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+/* .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
+} */
 
 #clock {
     background-color: #211e21;
