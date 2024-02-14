@@ -1,0 +1,10 @@
+#Connect to the rpi tor relay via ssh
+#
+
+date +%j > ~/.config/scripts/fileoutputs/torpilastchecked
+
+piIp=192.168.178.141
+echo Connecting to relay at $piIp
+
+ssh -l tor $piIp
+
